@@ -8,6 +8,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="src/knittight.png">
@@ -17,7 +18,7 @@
     <!-- LEFT Sidebar -->
     <div class="left-header">
         <div class="logo-container">
-            <img src="src/knittight.png" alt="knittight logo" class="logo">
+            <img src="src/knittight.png" alt="knittight logo" class="logo" onclick="tight()">
             <h1>Knittight</h1>
         </div>
 
@@ -64,12 +65,28 @@
                 </p>
             </div>
         </div>
+        <h2 style="padding-top: 48px;">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Knit</h3>
+                <p>A fast package/tool manager for Knittight packages (repositories).</p>
+                <a href="src/subpages/knit.html">Learn more →</a>
+            </div>
+            <div class="project-card">
+                <h3>apic</h3>
+                <p>A fast API client with a Postman/Insomnia-like style. Written in python, runs on the terminal!</p>
+                <a href="https://github.com/Knittight/apic">Learn more →</a>
+            </div>
+        </div>
     </div>
+
     <!-- Footer -->
     <div class="bottom-header">
         <p class="tiny-text">Made with &lt;3 by galaxyg144</p>
         <p class="tiny-text">Version 1.0.3 “Cardinal”</p>
     </div>
 </body>
+<audio id="confetti-sound" src="src/confetti.mp3" preload="auto"></audio>
+<canvas id="confetti-canvas"></canvas>
 
 </html>
